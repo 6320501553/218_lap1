@@ -11,14 +11,7 @@ int main()
         if(max<a[i])
         {
             max=a[i];
-        }
-    }
-    for(i=1;i<=n;i++)
-    {
-        if(max==a[i])
-        {
             loca=i;
-            break;
         }
     }
     printf("%d %d",loca,max);
