@@ -4,5 +4,6 @@ int main()
     int n,m,t;
     char k;
     scanf("%d %d %d",n,m,t);
-    scanf("%s",&k);
+    fflush(stdin);
+    scanf("%c",&k);
 }
