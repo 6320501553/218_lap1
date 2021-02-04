@@ -1,12 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,max,loca=0;
     scanf("%d",&n);
-    int a[n],i,max=0,loca=0;
-    for(i=1; i<=n; i++)
+    int a[n];
+    for(i=0; i<n; i++)
+    {
         scanf("%d",&a[i]);
-    for(i=1; i<=n; i++)
+    }
+    max=a[0];
+    for(i=1; i<n; i++)
     {
         if(max<a[i])
         {
@@ -14,5 +17,6 @@ int main()
             loca=i;
         }
     }
-    printf("%d %d",loca,max);
+    printf("%d %d",loca+1,max);
+    return 0;
 }
