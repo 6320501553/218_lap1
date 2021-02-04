@@ -3,7 +3,7 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int a[n],i,max=0;
+    int a[n],i,max=0,loca=0;
     for(i=1; i<=n; i++)
         scanf("%d",&a[i]);
     for(i=1; i<=n; i++)
@@ -13,5 +13,13 @@ int main()
             max=a[i];
         }
     }
-    printf("%d",max);
+    for(i=1;i<=n;i++)
+    {
+        if(max==a[i])
+        {
+            loca=i;
+            break;
+        }
+    }
+    printf("%d %d",loca,max);
 }
